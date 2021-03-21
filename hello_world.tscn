@@ -1,9 +1,31 @@
-[gd_scene format=2]
+[gd_scene load_steps=2 format=2]
 
-[node name="Label" type="Label"]
-margin_right = 40.0
-margin_bottom = 14.0
-text = "Hello World!"
+[ext_resource path="res://hello_world.gd" type="Script" id=1]
+
+[node name="Panel" type="Panel"]
+margin_right = 175.0
+margin_bottom = 108.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 42.9938
+margin_top = 23.463
+margin_right = 129.994
+margin_bottom = 41.463
+text = "This is a label"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+margin_left = 51.7574
+margin_top = 45.2929
+margin_right = 123.757
+margin_bottom = 65.2929
+text = "Press me"
 __meta__ = {
 "_edit_use_anchors_": false
 }
